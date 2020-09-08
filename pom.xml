@@ -6,6 +6,7 @@
 
     <properties>
         <spring.version>5.2.8.RELEASE</spring.version>
+        <spring.security>5.3.4.RELEASE</spring.security>
         <jetty.version>9.2.30.v20200428</jetty.version>
     </properties>
 
@@ -65,6 +66,21 @@
             <artifactId>spring-data-jpa</artifactId>
             <version>2.0.9.RELEASE</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-web -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>${spring.security}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-web -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${spring.security}</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
         <dependency>
             <groupId>mysql</groupId>
@@ -115,6 +131,15 @@
             <artifactId>thymeleaf-spring5</artifactId>
             <version>3.0.10.RELEASE</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.thymeleaf.extras/thymeleaf-extras-springsecurity5 -->
+        <dependency>
+            <groupId>org.thymeleaf.extras</groupId>
+            <artifactId>thymeleaf-extras-springsecurity5</artifactId>
+            <version>3.0.4.RELEASE</version>
+        </dependency>
+
+
         <!-- https://mvnrepository.com/artifact/org.webjars.bower/jquery -->
         <dependency>
             <groupId>org.webjars.bower</groupId>

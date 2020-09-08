@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 
 <html xmlns:th="http://www.thymeleaf.org">
+<html>
 
 <head>
     <title>Books List</title>
@@ -10,18 +11,13 @@
 
     <script type="text/javascript" th:src="@{/webjars/jquery/3.3.1/dist/jquery.min.js}"></script>
     <script type="text/javascript" th:src="@{/webjars/bootstrap/4.1.3/js/bootstrap.min.js}"></script>
-    <script type="text/javascript" th:src="@{/resources/js/main.js}"></script>
+    <!--    <script type="text/javascript" th:src="@{/resources/js/main.js}"></script>-->
     <link type="text/css" rel="stylesheet" th:href="@{/webjars/bootstrap/4.1.3/css/bootstrap.min.css}"/>
-    <link type="text/css" rel="stylesheet" th:href="@{/resources/css/main.css}"/>
+    <!--    <link type="text/css" rel="stylesheet" th:href="@{/resources/css/main.css}"/>-->
 </head>
 
 <body>
-<!--<div class="fluid-container">
-    <nav>
-        <div th:replace="~{my-menu :: mymenu(StudentsList)}">
-        </div>
-    </nav>
-</div>-->
+<div th:replace="~{navigation :: select('Books list')}"></div>
 
 <div class="container">
     <h1>Books List</h1>
