@@ -6,4 +6,5 @@ import ru.projects.entities.Book;
 
 @Repository
 public interface BookRepository extends JpaRepository<Book, Long> {
+    Book getFirstById(Long id);
 }

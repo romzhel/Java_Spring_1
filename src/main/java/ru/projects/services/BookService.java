@@ -20,8 +20,15 @@ public class BookService {
         return bookRepository.findAll();
     }
 
-    public void addBook(Book book) {
-        System.out.println(book);
-        bookRepository.save(book);
+    public Book getBookById(Long id) {
+        return bookRepository.getFirstById(id);
+    }
+
+    public Book saveBook(Book book) {
+        return bookRepository.save(book);
+    }
+
+    public void deleteBookById(Long id) {
+        bookRepository.deleteById(id);
     }
 }

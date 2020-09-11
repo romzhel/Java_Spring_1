@@ -33,7 +33,7 @@ public class BookController {
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     public String refreshList(Model model, Book book) {
-        bookService.addBook(book);
+        bookService.saveBook(book);
         return "redirect:/books/list";
     }
 }
